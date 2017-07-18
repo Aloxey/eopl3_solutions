@@ -74,12 +74,15 @@
 ;        (if (null? sos2)
 ;            '()
 ;            (cons (car sos1) (car sos2))
-;; Github solution
+
+;; Github solution - 1
 (define product
   (lambda (sos1 sos2)
     (if (null? sos1)
         '()
-        (append (map (lambda (s2) (list (car sos1) s2)) sos2)
+        (append (map (lambda (s2) 
+                       (list (car sos1) s2))
+                     sos2)
                 (product (cdr sos1) sos2)))))
 
 
