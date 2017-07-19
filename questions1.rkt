@@ -59,13 +59,13 @@
             (cons (car lst) (list-set (cdr lst) (- n 1) x))))))
 
 
-; q 1.20 --- I don't understand the question
+;; q 1.20 --- I don't understand the question
 ;(define count-occurences
 ;  (lambda (s slint)
 ;    (
 
 
-; q 1.21
+;; q 1.21
 ;; My solution, doesn't work
 ;(define product
 ;  (lambda (sos1 sos2)
@@ -85,6 +85,41 @@
                      sos2)
                 (product (cdr sos1) sos2)))))
 
+
+;; q 1.22
+(define filter-in
+  (lambda (pred lst)
+    (if (null? lst)
+        '()
+        (if (pred (car lst))
+                  (cons (car lst) (filter-in pred (cdr lst)))
+                  (filter-in pred (cdr lst) ))
+            )))
+
+;; q 1.23
+;; Doesn't return the correct value
+(define list-index
+  (lambda (pred lst)
+    (if (null? lst)
+        0
+        (if (pred (car lst))
+            (length lst)
+            (list-index pred (cdr lst))))))
+
+;; q 1.24
+(define every?
+  (lambda (pred lst)
+    (if (null? lst)
+        #t
+        (if (not (pred (car lst)))
+            #f
+            (every? pred (cdr lst))))))
+
+
+;; q 1.26
+(define up
+  (lambda (lst)
+    ()))
 
 
 

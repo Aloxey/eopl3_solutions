@@ -1,0 +1,1 @@
+("6.8" ("9c0a5ac006c5701935f04be2a0e1b3754f4f4187" . "d749343899e3add9e1e8aa62d13bc8dfc36b01ad") #"/Users/kourotchkinalex/Desktop/eopl3-solutions/proc-lang/ds-rep/lang.scm" (collects #"eopl" #"eopl.rkt") (collects #"errortrace" #"errortrace-key.rkt"))
