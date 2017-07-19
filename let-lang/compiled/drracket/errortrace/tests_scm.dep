@@ -1,0 +1,1 @@
+("6.8" ("bbddb3e202d7ea6c57b9229040a9dfb3d6aab91f" . "4bd0619864f5d38179654f8858a156a4a34e478d") (collects #"errortrace" #"errortrace-key.rkt") (collects #"mzscheme" #"main.rkt"))
